@@ -1,0 +1,15 @@
+<body>
+	<H2>Form Submit Test</H2>
+
+	<iframe name="ozFrame" width="100%" height="300px" ></iframe>
+	<form action="http://localhost:3000/viewer" method="post" enctype='text/plain' target="ozFrame">
+		<input name='{"ozId": 1337, "trash": "' value='"}'>
+		<button type="submit">submit to iframe</button>
+	</form>
+
+	<form action="http://localhost:3000/viewer" method="post" enctype='text/plain' target="_new">
+		<input name='{"ozId": 1337, "trash": "' value='"}'>
+		<button type="submit">submit to new Window</button>
+	</form>
+
+</body>
